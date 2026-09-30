@@ -456,6 +456,7 @@ class CameraActivity : AppCompatActivity() {
 		selectedCamera = cameras[
 			(cameras.indexOf(selectedCamera) + 1).mod(cameras.size)
 		]
+		prefs.defaultCamera = selectedCamera
 		bindCameraUseCases()
 	}
 
